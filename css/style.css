@@ -1,0 +1,454 @@
+html {
+	background: url('../img/bg.jpg') no-repeat center center fixed;
+	background-size: cover;
+	font-family: 'Exo 2', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+#container {
+	width:1015px;
+	margin:150px auto;
+
+}
+
+.deko {
+	height:530px;
+	width: 15px;
+	float: left;
+	border-radius:8px;
+
+	background: #f0b7a1; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f0b7a1 0%, #752201 69%, #8c3310 77%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f0b7a1), color-stop(69%,#752201), color-stop(77%,#8c3310)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f0b7a1 0%,#752201 69%,#8c3310 77%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #f0b7a1 0%,#752201 69%,#8c3310 77%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f0b7a1 0%,#752201 69%,#8c3310 77%); /* IE10+ */
+	background: linear-gradient(to right,  #f0b7a1 0%,#752201 69%,#8c3310 77%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#8c3310',GradientType=1 ); /* IE6-9 */
+
+
+}
+
+
+#cables{
+	position: absolute;
+    height: auto;
+    width: 500px;
+    left: 650px;
+    top: -345px;
+}
+
+
+#content {
+	width:945px;
+	height:500px;
+	padding:10px;
+	margin-top: 5px;
+	margin-bottom:100px;
+	float: left;
+	background: url("../img/allu.jpg");
+
+	-webkit-box-shadow: 10px 10px 35px 0 #363636;
+	box-shadow: 10px 10px 35px 0 #363636;
+}
+
+#controls {
+	width:160px;
+	padding: 20px;
+	float:left;
+	margin-right:10px;
+	background:#666;
+
+	box-shadow:inset 0 0 30px rgba(0,0,0,0.7);
+    -moz-box-shadow:inset 0 0 30px rgba(0,0,0,0.7);
+    -webkit-box-shadow:inset 0 0 30px rgba(0,0,0,0.7);
+    -o-box-shadow:inset 0 0 30px rgba(0,0,0,0.7);
+	padding-bottom:5px;
+	border-radius:8px;
+	border:solid 1px;
+
+    background:
+radial-gradient(black 10%, transparent 10%) 0 0,
+radial-gradient(black 10%, transparent 10%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#888;
+background-size:16px 16px;
+}
+
+#controlheadder{
+	border-radius:8px;
+	border:solid 1px;
+    border-color: #000;
+	float:left;
+	width:150px;
+	background: #303030;
+    color: #999;
+	margin-bottom:17px;
+	padding: 5px;
+    color: #df6909;
+    font-family: 'LCDBOLD' !important;
+    font-size: 18px;
+    text-align: center;
+}
+
+.controlelem{
+	border-radius:8px;
+    border: solid 1px;
+    border-color: #000;
+	float:left;
+	height:33px;
+	background-color:#CCC;
+	width:160px;
+	margin-bottom:10px;
+}
+
+.pictogram {
+	width:35px;
+	float:left;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.volumePictogram {
+	width:20px;
+	float:left;
+	padding-left:2px;
+	padding-right:5px;
+    margin-top: 10px;
+}
+
+.slider{
+	border-left:solid 6px #666;
+	height:19px;
+	float:left;
+	padding-top:14px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+.secondslider{
+	border-left:solid 6px #666;
+	height:19px;
+	float:left;
+	padding-top:14px;
+	padding-left:4px;
+}
+
+#bpm{
+	width:25px;
+
+}
+
+#beats{
+	width:25px;
+
+}
+
+#pattern {
+	float:left;
+	padding-right:20px;
+	padding-bottom:20px;
+
+}
+
+#logo {
+ width:200px;
+ margin-top:15px;
+ float:left;
+}
+
+#bpmdiv {
+ border-radius:8px;
+ border:solid 1px;
+ background:#666;
+ float:left;
+ padding: 5px;
+ width:692px;
+ height:50px;
+ margin-left:30px;
+
+    box-shadow:inset 0 0 15px rgba(0,0,0,0.7);
+    -moz-box-shadow:inset 0 0 15px rgba(0,0,0,0.7);
+    -webkit-box-shadow:inset 0 0 15px rgba(0,0,0,0.7);
+    -o-box-shadow:inset 0 0 15px rgba(0,0,0,0.7);
+
+background:
+radial-gradient(black 10%, transparent 10%) 0 0,
+radial-gradient(black 10%, transparent 10%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#888;
+background-size:16px 16px;
+}
+
+#firstchooser {
+ border-radius:8px;
+ border:solid 1px;
+ background-color:#CCC;
+ float:left;
+ width: 153px;
+ margin-right: 20px;
+ margin-top: 5px;
+ height: 40px;
+}
+
+#kitlist {
+  width: 153px;
+  height: 40px;
+  background:url('../img/arrow_down.png');
+  background-color:#303030;
+  background-repeat:no-repeat;
+  background-position: right 10px top 13px;
+  background-size: 16px 16px;
+  padding-left:12px;
+  font-family: 'LCDBOLD' !important;
+  font-size:18px;
+  color: #df6909;
+  border-radius:6px;
+  border:0px;
+  -webkit-appearance: none;
+  outline:0;
+}
+
+
+#secondchooser {
+ border-radius:8px;
+ border:solid 1px;
+ background-color:#CCC;
+ float:left;
+ width: 146px;
+ height: 40px;
+ padding-left: 5px;
+ padding-right: 5px;
+ margin-right: 20px;
+ margin-top: 5px;
+}
+
+.thirdslider{
+	border-left:solid 6px #666;
+    border-right:solid 6px #666;
+	height:23px;
+	float:left;
+	padding-top:17px;
+	padding-left:2px;
+	padding-right:2px;
+}
+
+#thirdchooser {
+ border-radius:8px;
+ border:solid 1px;
+ background-color:#CCC;
+ float:left;
+ width: 141px;
+ height: 40px;
+ padding-left: 15px;
+ margin-right: 20px;
+ margin-top: 5px;
+}
+
+#lastchooser {
+ border-radius:8px;
+ border:solid 1px;
+ background-color:#CCC;
+ float:left;
+ width: 141px;
+ height: 40px;
+ padding-left: 15px;
+ margin-top: 5px;
+
+}
+
+.buttonminus {
+    background: url('../img/knopf_minus.png');
+    float:left;
+	height:32px;
+	width:32px;
+    margin-top:4px;
+    margin-left: 5px;
+    margin-right: 5px;
+	border-radius:8px;
+	border:solid 1px;
+}
+
+.buttonminus:active {
+    background: url('../img/knopf_minus_pressed.png')
+}
+
+.buttonplus {
+    background: url('../img/knopf_plus.png');
+    float:left;
+	height:32px;
+	width:32px;
+    margin-top:4px;
+    margin-left: 5px;
+    margin-right: 5px;
+	border-radius:8px;
+	border:solid 1px;
+}
+
+.buttonplus:active {
+    background: url('../img/knopf_plus_pressed.png')
+}
+
+
+input[type=checkbox]{
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+
+input[type=checkbox] + label{
+  background: url('../img/knopf_start.png');
+  border-radius:8px;
+  border:solid 1px;
+  width: 40px;
+  height: 30px;
+  float:right;
+  margin-top: 4px;
+}
+
+input[type=checkbox]:checked + label{
+  background   : url('../img/knopf_stop.png');
+}
+
+input[type=checkbox]:active + label{
+  background   : url('../img/knopf_stop_pressed.png');
+}
+
+.text {
+    background: #303030;
+    float:left;
+	height:28px;
+    width:32px;
+    margin-top:4px;
+    margin-left: 5px;
+    margin-right: 5px;
+border-radius:8px;
+	border:solid 1px;
+    border-color: #000;
+	font-family: 'LCDBOLD' !important;
+    font-size: 13px;
+    color: #df6909;
+}
+
+input{
+text-align:center;
+}
+
+.pattern_active{
+	background: url('../img/knopf_on_pressed.png');
+}
+
+.pattern_inactive{
+	background: url('../img/knopf_off.png');
+}
+
+#indicator_row{
+	padding-bottom:30px;
+	padding-top:20px;
+}
+
+.indicator_felem {
+	float:left;
+	height:32px;
+	width:32px;
+	margin-left:20px;
+	border-radius:30px;
+	background: url('../img/indicator_off.png');
+}
+
+.indicator_elem {
+	float:left;
+	height:32px;
+	width:32px;
+	margin-left:10px;
+	border-radius:30px;
+	background: url('../img/indicator_off.png');
+}
+
+.indicatorHighlighted{
+	background: url('../img/indicator_on.png');
+}
+
+.pattern_row {
+	padding-top:20px;
+	padding-bottom:25px;
+}
+
+.pattern_felem {
+	float:left;
+	height:30px;
+	width:30px;
+	margin-left:20px;
+	border-radius:8px;
+	border:solid 1px;
+}
+
+.pattern_elem {
+	float:left;
+	height:30px;
+	width:30px;
+	margin-left:10px;
+	border-radius:8px;
+	border:solid 1px;
+}
+
+/*          Modal Dialog          */
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+	box-shadow: 1px 1px 3px #000;
+
+}
+
+.close:hover { background: #df6909; }
+
+#hawlogo{
+    width: 50px;
+}

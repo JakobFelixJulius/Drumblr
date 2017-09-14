@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>.: Drumblr :. Jakob Sudau & Jan Schüler</title>
+<link href="css/slider.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/font.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/sound.js"></script>
+<script type="text/javascript" src="js/drumkit.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body onload="onStartUp()">
+<img id="cables" src="img/cable.png" />
+<div id="container">
+    <div id="wrapper">
+    	<div class="deko"></div>
+    	<div id="content">
+    		<div id="controls">
+			<div id="controlheadder"> C o n t r o l s  </div>
+			<div class="controlelem" style="">
+            	<img class="pictogram" src="img/kick.png" />
+                <div class="slider">
+                    <input id="volume_01" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_01" type="range" min="-1" max="1" step="0.1" value="0"/>
+            	</div>
+
+            </div>
+			<div class="controlelem">
+            	<img class="pictogram" src="img/snare.png" />
+                <div class="slider">
+            		<input id="volume_02" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_02" type="range" min="-1" max="1" step="0.1" value="0"/>
+            	</div>
+            </div>
+			<div class="controlelem">
+            	<img class="pictogram" src="img/clap.png" />
+                <div class="slider">
+            		<input id="volume_03" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_03" type="range" min="-1" max="1" step="0.1" value="0"/>
+            	</div>
+            </div>
+			<div class="controlelem">
+            	<img class="pictogram" src="img/hihatopen.png" />
+                <div class="slider">
+            		<input id="volume_04" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_04" type="range" min="-1" max="1" step="0.1" value="0"/>
+                </div>
+            </div>
+			<div class="controlelem">
+            	 <img class="pictogram" src="img/hihatclose.png" />
+                 <div class="slider">
+            	 	<input id="volume_05" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_05" type="range" min="-1" max="1" step="0.1" value="0"/>
+                 </div>
+            </div>
+			<div class="controlelem">
+            	<img class="pictogram" src="img/tom1.png" />
+                <div class="slider">
+            	 	<input id="volume_06" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_06" type="range" min="-1" max="1" step="0.1" value="0"/>
+                 </div>
+            </div>
+			<div class="controlelem">
+            	<img class="pictogram" src="img/tom2.png" />
+                <div class="slider">
+            		<input id="volume_07" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_07" type="range" min="-1" max="1" step="0.1" value="0"/>
+                </div>
+            </div>
+			<div class="controlelem">
+            	<img class="pictogram" src="img/tom3.png" />
+                <div class="slider">
+            		<input id="volume_08" type="range" min="0" max="1" step="0.1" value="1"/>
+                </div>
+                <div class="secondslider">
+            		<input id="pan_08" type="range" min="-1" max="1" step="0.1" value="0"/>
+                </div>
+            </div>
+		</div>
+
+        	<div id="pattern"> </div>
+            <a href="#openModal">
+                <img id="logo" src="img/logo.png"/>
+            </a>
+			<div id="bpmdiv">
+				<div id="firstchooser">
+            		<select id="kitlist"></select>
+	            </div>
+	            <div id="secondchooser">
+                    <img class="volumePictogram" src="img/volume.png" />
+                    <div class="thirdslider">
+				        <input id="masterVolume" type="range" min="0" max="1" step="0.1" value="1"/>
+                    </div>
+				        <input type="checkbox" name="stop" id="stop" class="btn" onClick="holdPlay()";/>
+                        <label for="stop"></label>
+	            </div>
+    	        <div id="thirdchooser">
+        	    	<input type="text" name="bpm" id="bpm" onChange="setbpm(this.value)" class="text" />
+					<input type="button" name="add" onClick="increasebpm()"  class="buttonplus"/>
+					<input type='button' name='subtract' onClick="decreasebpm()" class="buttonminus"/>
+				</div>
+    	        <div id="lastchooser">
+        	        <input type="text" name="beats" id="beats" onChange="setBeats(this.value)" class="text" />
+					<input type="button" name="addbeat" onClick="increaseBeats()" class="buttonplus"/>
+					<input type='button' name='subtractbeat' onClick="decreaseBeats()" class="buttonminus" />
+	      		</div>
+			</div>
+    	</div>
+    	<div class="deko"></div>
+    </div>
+
+
+<div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+        <img src="img/logo.png"/>
+		<h2>Ein Projekt von <br> Jakob Sudau & Jan Schüler</h2>
+		<p>Dieses Projekt ist im Wintersemester 14/15 als <br> Projekt C des Studiengangs Media-Systems entstanden.</p>
+        <img id="hawlogo" src="img/hawlogo.png"/>
+	</div>
+</div>
+
+
+</body>
+</html>
